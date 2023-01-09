@@ -23,7 +23,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5005/SendEmail", data)
+      .post("http://localhost:5000/SendEmail", data)
       .then((res) => {
         console.warn(res);
       })
